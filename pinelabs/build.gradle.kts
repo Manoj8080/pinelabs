@@ -1,8 +1,9 @@
 plugins {
-//    alias(libs.plugins.android.application)
-    /*id("com.android.library")*/
-    alias(libs.plugins.android.library)
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
+    id("maven-publish")
 }
+
 
 android {
     namespace = "com.nukkadshops.pinelabs"
@@ -50,4 +51,13 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+}
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+            }
+        }
+    }
 }
