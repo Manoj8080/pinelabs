@@ -76,6 +76,7 @@ public class PaymentRepository {
         });
     }
 
+
     public void startStatusPolling(long ptr, MutableLiveData<StatusResponse> liveData) {
         stopStatusPolling();
 
