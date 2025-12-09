@@ -3,7 +3,7 @@ name: Publish Pinelabs SDK to Sonatype Central
 on:
   push:
     tags:
-      - "v*.*.*"   # triggers when you push a tag like v1.0.5
+      - "v*.*.*"   # triggers when you push a tag like v1.0.9
 
 jobs:
   publish:
