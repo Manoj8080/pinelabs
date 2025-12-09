@@ -1,5 +1,8 @@
 package com.nukkadshops.pinelabs.data.models;
+
 import com.google.gson.annotations.SerializedName;
+
+//import com.google.gson.annotations.SerializedName;
 public class CancelRequest {
 
     @SerializedName("StoreID")
