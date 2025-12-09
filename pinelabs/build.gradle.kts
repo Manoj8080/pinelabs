@@ -33,7 +33,7 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 }
 
-val releaseVersion = "1.0.4"
+val releaseVersion = "1.0.5"
 
 // -----------------------------------------------------
 // 1️⃣ ZIP PACKAGE FOR SONATYPE CENTRAL
